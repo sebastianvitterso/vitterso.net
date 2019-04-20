@@ -1,0 +1,86 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+}
+body {
+  background-color: rgb(236, 236, 236);
+  padding: 0;
+}
+h1 {
+  font-family: 'Alegreya Sans';
+  color: rgb(43, 43, 43);
+  text-align: center;
+  padding-top: 50px; 
+  padding-bottom: 10px;
+  font-size: 500%;
+}
+h2{
+  font-family: 'Alegreya Sans';
+  color: rgb(43, 43, 43);
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 200%;
+}
+h3{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(43, 43, 43);
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 150%
+}
+p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: rgb(43, 43, 43);
+  font-size: 140%;
+}
+a{
+  color: rgb(43, 43, 43);
+}
+a:visited{
+  color: rgb(0,0,0)
+}
+.main{
+  background-color: rgba(255, 255, 255, 0.76);
+  margin: auto;
+  width: 70%;
+  padding: 40px;
+}
+.project{
+  display: inline-block;
+}
+.project-image-box{
+  padding: 5px;
+  background-color: rgb(235, 235, 235);
+  width: 25%;
+  height: auto;
+  float: left;
+}
+.project-image{
+  width: 100%;
+  height: auto;
+}
+.project-description{
+  width: 60%;
+  float: left;
+  padding: 0 15px;
+}
+.project-description p{
+  text-align: left;
+}
+.project-description h3{
+  text-align: left;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url('assets/fonts/AlegreyaSans-Thin/AlegreyaSans-Thin.eot');
+  src: url('assets/fonts/AlegreyaSans-Thin/AlegreyaSans-Thin.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/AlegreyaSans-Thin/AlegreyaSans-Thin.woff2') format('woff2'),
+      url('assets/fonts/AlegreyaSans-Thin/AlegreyaSans-Thin.woff') format('woff'),
+      url('assets/fonts/AlegreyaSans-Thin/AlegreyaSans-Thin.svg#AlegreyaSans-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
