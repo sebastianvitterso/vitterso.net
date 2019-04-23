@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<!--<head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/favicon.png">
-</head>-->
-<header>
   <title>Sebastian Vittersø</title>
-</header>
+</head>
 <body>
   <div class="main">
 
     <h1>Sebastian Vittersø</h1>
     <h2>Datateknologistudent ved NTNU.</h2>
-    <div class="whitespace" style="padding-top: 30vh"/>
+
+    <div class="whitespace" style="padding-top: 20vh"/>
+
+    <div class="projects-title">
+      <h3>Prosjekter:</h3>
+    </div>
+
     <div class="project">
-      <div class="project-image-box">
-        <img class="project-image" src="assets/blackbird.jpg">
-      </div>
+      <img class="project-image" src="assets/blackbird.jpg">
       <div class="project-description">
-        <h3>BlackBird</h3>
-        <p> I faget <a href="https://www.ntnu.no/studier/emner/TDT4140">Programvareutvikling</a> utviklet vi skrivebordsapplikasjonen BlackBird,
-        for å lage kalenderløsning for studentassistenter på lesesal, levering av øvinger og kunngjøringer i fag.</p>
+        <h4>BlackBird <i class="fab fa-java" title="Java"></i> </h4>
+        <p> 
+          I faget <a href="https://www.ntnu.no/studier/emner/TDT4140" target="_blank">Programvareutvikling</a> utviklet vi skrivebordsapplikasjonen BlackBird,
+          en kalenderløsning for studentassistenter på lesesal med mulighet for levering av øvinger og kunngjøringer i fag. <br> 
+          Programmet er et gruppeprosjekt hvor vi samarbeidet i en gruppe på seks. Mitt hovedansvar lå i back-end (MySQL via JDBC).
+        </p>
+        <a class="github-link" href="https://github.com/sebastianvitterso/blackbird" target="_blank" title="Se prosjektet på GitHub">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
       </div>
     </div>
 
+    <div class="project">
+        <img class="project-image" src="assets/diceapp.jpg">
+        <div class="project-description">
+          <h4>DiceApp by Vitterso <i class="fab fa-react framework-icon" title="React Native"></i></h4>
+          <p> 
+            Terning-app til Android og iOS, bygget i React Native for å lære rammeverket og utforske publisering til app-butikkene. <br>
+            Tilgjengelig nå for både Android og iPhone.           
+          </p>
+          <a class="github-link" href="https://github.com/sebastianvitterso/DiceApp" target="_blank" title="Se prosjektet på GitHub">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+        </div>
+      </div>
 
-
+      <div class="project">
+          <img class="project-image" src="assets/ulapp.jpg">
+          <div class="project-description">
+            <h4>UL-appen <i class="fab fa-react framework-icon" title="React Native"></i></h4>
+            <p> 
+              Informasjons-app for NLMs ungdomsfestival UL, skrevet i React Native. <br>
+              Gruppeprosjekt med tre medstudenter.
+            </p>
+          </div>
+        </div>
+  
+        <div class="project">
+            <img class="project-image" src="assets/ulno.jpg">
+            <div class="project-description">
+              <h4><a href="https://www.ul.no/" target="_blank">UL.no</a> <i class="fab fa-wordpress-simple framework-icon" title="Wordpress"></i></h4>
+              <p> 
+                Nettside for NLMs ungdomsfestival UL, bygget i Wordpress. <br>
+                Dette prosjektet tok vi (samme gruppe som app) over fra web-ansvarlig, og har kun oppdatert nettsidens innhold.
+              </p>
+            </div>
+          </div>
+    
   </div> 
 </body>
 </html>

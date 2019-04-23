@@ -10,9 +10,10 @@ h1 {
   font-family: 'Alegreya Sans';
   color: rgb(43, 43, 43);
   text-align: center;
-  padding-top: 50px; 
+  padding-top: 20vh; 
   padding-bottom: 10px;
   font-size: 500%;
+  letter-spacing: 4px;
 }
 h2{
   font-family: 'Alegreya Sans';
@@ -20,8 +21,16 @@ h2{
   text-align: center;
   padding-bottom: 40px;
   font-size: 200%;
+  letter-spacing: 1px;
 }
 h3{
+  font-family: "Open Sans Light";
+  color: rgb(43, 43, 43);
+  text-align: left;
+  padding-bottom: 40px;
+  font-size: 300%
+}
+h4{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(43, 43, 43);
   text-align: center;
@@ -48,17 +57,14 @@ a:visited{
 }
 .project{
   display: inline-block;
+  padding: 25px 0;
 }
-.project-image-box{
+.project-image{
   padding: 5px;
   background-color: rgb(235, 235, 235);
   width: 25%;
   height: auto;
   float: left;
-}
-.project-image{
-  width: 100%;
-  height: auto;
 }
 .project-description{
   width: 60%;
@@ -68,8 +74,19 @@ a:visited{
 .project-description p{
   text-align: left;
 }
-.project-description h3{
+.project-description h4{
   text-align: left;
+}
+.framework-icon{
+  color: rgb(95, 95, 95);
+}
+.fa-github{
+  padding: 15px 0;
+  color: rgb(95, 95, 95);
+}
+.fa-github:hover{
+  padding: 15px 0;
+  color: rgb(136, 136, 136);
 }
 
 @font-face {
@@ -83,4 +100,12 @@ a:visited{
   font-style: normal;
 }
 
+@font-face {
+  font-family:"Open Sans Light";
+  src:url("assets/fonts/Open_Sans_Light/OpenSans-Light.eot?") format("eot"),
+  url("assets/fonts/Open_Sans_Light/OpenSans-Light.woff") format("woff"),
+  url("assets/fonts/Open_Sans_Light/OpenSans-Light.ttf") format("truetype"),
+  url("assets/fonts/Open_Sans_Light/OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-weight:normal;
+  font-style:normal;}
 
