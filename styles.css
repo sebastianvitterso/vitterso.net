@@ -11,49 +11,56 @@ h1 {
   color: rgb(43, 43, 43);
   text-align: center;
   padding-top: 20vh; 
-  padding-bottom: 10px;
-  font-size: 500%;
+  padding-bottom: 0.3em;
   letter-spacing: 4px;
+  font-size: calc(2.8em + 3.5vw);
 }
 h2{
   font-family: 'Alegreya Sans';
   color: rgb(43, 43, 43);
   text-align: center;
-  padding-bottom: 40px;
-  font-size: 200%;
-  letter-spacing: 1px;
+  padding-bottom: 1em;
+  font-size: calc(1.8em + 2vw);
 }
 h3{
   font-family: "Open Sans Light";
   color: rgb(43, 43, 43);
-  text-align: left;
-  padding-bottom: 40px;
-  font-size: 300%
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: calc(1.5em + 1vw);
 }
 h4{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(43, 43, 43);
   text-align: center;
   padding-bottom: 10px;
-  font-size: 150%
+  font-size: calc(0.9em + 0.8vw);
 }
 p{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
   color: rgb(43, 43, 43);
-  font-size: 140%;
+  font-size: calc(0.8em + 0.8vw);
 }
 a{
+  position: relative;
+  margin: auto;
   color: rgb(43, 43, 43);
+  text-decoration: none;
 }
 a:visited{
-  color: rgb(0,0,0)
+  color: rgb(0,0,0);
+  text-decoration: none;
 }
+
 .main{
   background-color: rgba(255, 255, 255, 0.76);
   margin: auto;
   width: 70%;
   padding: 40px;
+}
+.whitespace{
+  padding-top: 4vh;
 }
 .project{
   display: inline-block;
@@ -62,25 +69,29 @@ a:visited{
 .project-image{
   padding: 5px;
   background-color: rgb(235, 235, 235);
-  width: 25%;
+  width: 90%;
   height: auto;
-  float: left;
 }
 .project-description{
-  width: 60%;
-  float: left;
-  padding: 0 15px;
+  margin: auto;
+  width: 90%;
+  display: inline-block;
+  text-align: center;
 }
 .project-description p{
-  text-align: left;
+  text-align: center;
 }
 .project-description h4{
-  text-align: left;
+  text-align: center;
 }
 .framework-icon{
   color: rgb(95, 95, 95);
 }
+.github-link{
+  text-align: center;
+}
 .fa-github{
+  margin: auto;
   padding: 15px 0;
   color: rgb(95, 95, 95);
 }
@@ -88,6 +99,57 @@ a:visited{
   padding: 15px 0;
   color: rgb(136, 136, 136);
 }
+
+
+@media only screen and (min-width: 600px) {
+  h3{ text-align: left; }
+  .main{
+    background-color: rgba(255, 255, 255, 0.76);
+    margin: auto;
+    width: 70%;
+    padding: 40px;
+  }
+  .whitespace{
+    padding-top: 20vh;
+  }  
+  .project{
+    display: inline-block;
+    padding: 25px 0;
+  }
+  .project-image{
+    padding: 5px;
+    background-color: rgb(235, 235, 235);
+    width: 25%;
+    height: auto;
+    float: left;
+  }
+  .project-description{
+    width: 60%;
+    float: left;
+    padding: 0 15px;
+    text-align: left;
+  }
+  .project-description p{
+    text-align: left;
+  }
+  .project-description h4{
+    text-align: left;
+  }
+  .framework-icon{
+    color: rgb(95, 95, 95);
+  }
+  .fa-github{
+    padding: 15px 0;
+    color: rgb(95, 95, 95);
+  }
+  .fa-github:hover{
+    padding: 15px 0;
+    color: rgb(136, 136, 136);
+  }
+}
+
+
+
 
 @font-face {
   font-family: 'Alegreya Sans';
