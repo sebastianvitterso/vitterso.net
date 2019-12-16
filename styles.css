@@ -87,15 +87,15 @@ a:visited{
 .framework-icon{
   color: rgb(95, 95, 95);
 }
-.github-link{
+.project-link{
   text-align: center;
 }
-.fa-github{
+.project-link > i{
   margin: auto;
   padding: 15px 0;
   color: rgb(95, 95, 95);
 }
-.fa-github:hover{
+.project-link > i:hover{
   padding: 15px 0;
   color: rgb(136, 136, 136);
 }
@@ -138,11 +138,11 @@ a:visited{
   .framework-icon{
     color: rgb(95, 95, 95);
   }
-  .fa-github{
+  .project-link > i{
     padding: 15px 0;
     color: rgb(95, 95, 95);
   }
-  .fa-github:hover{
+  .project-link > i:hover{
     padding: 15px 0;
     color: rgb(136, 136, 136);
   }
