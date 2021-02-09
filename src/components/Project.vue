@@ -42,11 +42,6 @@ export default defineComponent({
       required: true,
     },
   },
-  computed: {
-    properties(): Array<any> {
-      return Object.entries(this.project);
-    }
-  }
 });
 </script>
 
