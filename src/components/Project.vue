@@ -5,7 +5,7 @@
       alt="Project image"
       class="w-56 h-56 xs:w-96 xs:h-96 md:w-64 md:h-64 border-gray-200 border-4"
     />
-    <div class="px-2 mt-2 md:mt-0">
+    <div class="px-2 md:px-4 mt-2 md:mt-0">
       <h4 class="text-2xl space-x-2">
         <span>{{project.title}}</span>
         <span 
