@@ -8,7 +8,7 @@
 
       
       <h3 class="text-4xl text-gray-700 mb-4 text-center md:text-left">Prosjekter:</h3>
-      <div class="space-y-8">
+      <div class="space-y-8 mb-12">
         <ProjectArticle 
           v-for="(project, idx) in projects" :key="idx"
           :project="project"
