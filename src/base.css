@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply underline;
+  @apply text-blue-700;
+
+  &:hover {
+    @apply text-blue-900;
+  }
+  &:visited {
+    @apply text-purple-900;
+  }
+}
