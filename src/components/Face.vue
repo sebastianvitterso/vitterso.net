@@ -7,6 +7,7 @@
   >
     <div
       v-if="enableFace"
+      id="face"
       class="w-96 absolute bottom-0 left-1/2"
       :style="`translate: ${x}vw  ${y}vh;`"
     >
@@ -47,4 +48,22 @@ function moveFace(xPos: number, yPos: number) {
 }
 </script>
 
-<style></style>
+<style>
+:root {
+  --x-dist: 20px;
+}
+
+@keyframes float {
+  100%,
+  0% {
+    translate: 0;
+  }
+  50% {
+    translate: 0 calc(var(--x-dist));
+  }
+}
+
+#face > img {
+  animation: float 3s ease-in-out infinite alternate;
+}
+</style>
