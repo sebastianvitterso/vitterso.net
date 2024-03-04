@@ -1,16 +1,7 @@
 <template>
-  <div
-    class="absolute inset-0 w-screen h-screen overflow-hidden"
-    @dblclick="toggleFace"
-    @mousemove="onMouseMove"
-    @touchmove="onTouchMove"
-  >
-    <div
-      v-if="enableFace"
-      id="face"
-      class="w-96 absolute bottom-0 left-1/2"
-      :style="`translate: ${x}vw  ${y}vh;`"
-    >
+  <div class="absolute inset-0 w-screen h-screen overflow-hidden" :class="[enableFace ? 'cursor-none' : '']"
+    @dblclick="toggleFace" @mousemove="onMouseMove" @touchmove="onTouchMove">
+    <div v-if="enableFace" id="face" class="w-96 absolute top-0 left-0" :style="`translate: ${x}px  ${y}px;`">
       <img :src="faceImage" alt="My face" />
     </div>
   </div>
@@ -38,32 +29,31 @@ function onMouseMove(event: MouseEvent) {
   moveFace(xPos, yPos)
 }
 function moveFace(xPos: number, yPos: number) {
-  const windowWidth = window.innerWidth
-  const windowHeight = window.innerHeight
-  const xRatio = xPos / windowWidth
-  const yRatio = yPos / windowHeight
-
-  x.value = xRatio * 50 - 50
-  y.value = yRatio * 25 + 5
+  const faceWidth = 384
+  const faceHeight = 512
+  x.value = xPos - (faceWidth / 2)
+  y.value = yPos - (faceHeight / 2)
 }
 </script>
 
 <style>
 :root {
-  --x-dist: 20px;
+  --y-dist: 20px;
 }
 
 @keyframes float {
+
   100%,
   0% {
     translate: 0;
   }
+
   50% {
-    translate: 0 calc(var(--x-dist));
+    translate: 0 calc(var(--y-dist));
   }
 }
 
-#face > img {
+#face>img {
   animation: float 3s ease-in-out infinite alternate;
 }
 </style>
