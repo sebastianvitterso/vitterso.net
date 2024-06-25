@@ -1,7 +1,17 @@
 <template>
-  <div class="absolute inset-0 w-screen h-screen overflow-hidden" :class="[enableFace ? 'cursor-none' : '']"
-    @dblclick="toggleFace" @mousemove="onMouseMove" @touchmove="onTouchMove">
-    <div v-if="enableFace" id="face" class="w-96 absolute top-0 left-0" :style="`translate: ${x}px  ${y}px;`">
+  <div
+    class="absolute inset-0 w-screen h-screen overflow-hidden"
+    :class="[enableFace ? 'cursor-none' : '']"
+    @dblclick="toggleFace"
+    @mousemove="onMouseMove"
+    @touchmove="onTouchMove"
+  >
+    <div
+      v-if="enableFace"
+      id="face"
+      class="w-96 absolute top-0 left-0"
+      :style="`translate: ${x}px  ${y}px;`"
+    >
       <img :src="faceImage" alt="My face" />
     </div>
   </div>
@@ -11,7 +21,7 @@
 import { ref } from 'vue'
 import faceImage from '../assets/face.png'
 
-const enableFace = ref(false)
+const enableFace = ref(true)
 const x = ref(0)
 const y = ref(0)
 
@@ -31,8 +41,8 @@ function onMouseMove(event: MouseEvent) {
 function moveFace(xPos: number, yPos: number) {
   const faceWidth = 384
   const faceHeight = 512
-  x.value = xPos - (faceWidth / 2)
-  y.value = yPos - (faceHeight / 2)
+  x.value = xPos - faceWidth / 2
+  y.value = yPos - faceHeight / 2
 }
 </script>
 
@@ -42,7 +52,6 @@ function moveFace(xPos: number, yPos: number) {
 }
 
 @keyframes float {
-
   100%,
   0% {
     translate: 0;
@@ -53,7 +62,7 @@ function moveFace(xPos: number, yPos: number) {
   }
 }
 
-#face>img {
+#face > img {
   animation: float 3s ease-in-out infinite alternate;
 }
 </style>
