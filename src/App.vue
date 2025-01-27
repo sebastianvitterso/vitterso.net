@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full flex justify-center items-center">
-    <div class="w-full max-w-screen-lg bg-white mx-auto px-2 sm:px-8">
+    <div class="w-full max-w-(--breakpoint-lg) bg-white mx-auto px-2 sm:px-8">
       <header
         class="flex flex-col justify-center text-center items-center select-none py-32 gap-12"
       >
