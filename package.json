@@ -14,28 +14,28 @@
 		"format": "prettier --write src/"
 	},
 	"dependencies": {
-		"vue": "^3.5.33"
+		"vue": "^3.5.34"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3.3.5",
 		"@eslint/js": "^10.0.1",
 		"@rushstack/eslint-patch": "^1.16.1",
-		"@tailwindcss/postcss": "^4.2.4",
+		"@tailwindcss/postcss": "^4.3.0",
 		"@tsconfig/node18": "^18.2.6",
-		"@types/node": "^25.6.0",
+		"@types/node": "^25.6.2",
 		"@vitejs/plugin-vue": "^6.0.6",
 		"@vue/eslint-config-prettier": "^10.2.0",
 		"@vue/eslint-config-typescript": "^14.7.0",
 		"@vue/tsconfig": "^0.9.1",
 		"eslint": "^10.3.0",
-		"eslint-plugin-vue": "^10.9.0",
+		"eslint-plugin-vue": "^10.9.1",
 		"globals": "^17.6.0",
 		"npm-run-all2": "^8.0.4",
 		"postcss": "^8.5.13",
 		"prettier": "^3.8.3",
 		"tailwindcss": "^4.1.18",
 		"typescript": "~6.0.3",
-		"vite": "^8.0.10",
-		"vue-tsc": "^3.2.7"
+		"vite": "^8.0.11",
+		"vue-tsc": "^3.2.8"
 	}
 }
