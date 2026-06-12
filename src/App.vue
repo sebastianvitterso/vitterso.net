@@ -1,4 +1,6 @@
 <template>
+  <Menu />
+
   <div class="w-full h-full flex justify-center items-center">
     <div class="w-full max-w-(--breakpoint-lg) bg-white mx-auto px-2 sm:px-8">
       <header
@@ -23,9 +25,23 @@
 </template>
 
 <script setup lang="ts">
-import Face from './components/Face.vue'
+import { ref } from 'vue';
+import Face from './components/Face.vue';
+import Menu from './components/Menu.vue';
+
+const open = ref(false)
+
+const links = [
+  { name: 'scoreboard', href: 'https://scoreboard.vitterso.net' },
+  { name: 'quiz-map', href: 'https://quiz-map.vitterso.net' },
+  { name: 'quiz-drawing', href: 'https://quiz-drawing.vitterso.net' },
+  { name: 'mini-jeopardy', href: 'https://mini-jeopardy.vitterso.net' },
+  { name: 'buzzer', href: 'https://buzzer.vitterso.net' },
+]
 </script>
 
 <style lang="css">
 @import url('./base.css');
 </style>
+Face from './components/Face.vue';
+import Menu from './components/Menu.vue';
