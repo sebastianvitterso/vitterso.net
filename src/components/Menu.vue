@@ -52,6 +52,7 @@ const links = [
   { name: 'quiz-drawing', href: 'https://quiz-drawing.vitterso.net' },
   { name: 'mini-jeopardy', href: 'https://mini-jeopardy.vitterso.net' },
   { name: 'buzzer', href: 'https://buzzer.vitterso.net' },
+  { name: 'music-quiz', href: 'https://music-quiz.vitterso.net/' },
 ]
 
 function onOutsideClick(event: MouseEvent) {
