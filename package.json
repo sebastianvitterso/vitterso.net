@@ -34,7 +34,7 @@
 		"postcss": "^8.5.16",
 		"prettier": "^3.9.8",
 		"tailwindcss": "^4.1.18",
-		"typescript": "~6.0.3",
+		"typescript": "~7.0.2",
 		"vite": "^8.3.0",
 		"vue-tsc": "^3.3.7"
 	}
